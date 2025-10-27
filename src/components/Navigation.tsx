@@ -11,10 +11,12 @@ export const Navigation = () => {
     >
       <div className="container">
         <div className="navbar-brand">
+          {/* Home link */}
           <NavLink
+            end
             className={({ isActive }) =>
               isActive
-                ? 'navbar-item has-background-grey-lighter '
+                ? 'navbar-item has-background-grey-lighter'
                 : 'navbar-item'
             }
             to="/"
@@ -22,10 +24,11 @@ export const Navigation = () => {
             Home
           </NavLink>
 
+          {/* People link */}
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? 'navbar-item has-background-grey-lighter '
+                ? 'navbar-item has-background-grey-lighter'
                 : 'navbar-item'
             }
             to="/people"

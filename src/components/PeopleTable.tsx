@@ -1,16 +1,7 @@
 import React from 'react';
 import { PersonLink } from './PersonLink';
 import { useParams } from 'react-router-dom';
-
-type Person = {
-  name: string;
-  sex: string;
-  born: number;
-  died: number;
-  fatherName: string | null;
-  motherName: string | null;
-  slug: string;
-};
+import { Person } from '../types/Person';
 
 type Props = {
   people: Person[] | undefined;
